@@ -176,7 +176,7 @@ footer {
     margin: 20px 10px;
   }
   #name {
-    position: fixed;
+    position: absolute;
     width: 87%;
     margin: 25px 86px;
     display: inline-block;
