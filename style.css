@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Quicksand:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Quicksand:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +7,7 @@ body {
   height: 100vh;
   width: 100vw;
   background: #0d1117;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 .container {
   display: flex;
@@ -95,7 +95,10 @@ footer {
   width: 100%;
   text-align: center;
 }
-
+#resultbox {
+  position: relative;
+  top: 25px;
+}
 .result {
   height: 400px;
   width: 800px;
@@ -122,13 +125,118 @@ footer {
   margin: 68px 102px;
   font-size: 1.2em;
 }
-#followBox{
-    display: flex;
-    justify-content: center;
+#followBox {
+  display: flex;
+  justify-content: center;
 }
 #followers {
   position: absolute;
   font-size: 20em;
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
   margin: 90px 20px;
+}
+#tab {
+  text-decoration: none;
+  color: yellow;
+}
+
+@media screen and (max-width: 450px) {
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+  .logo svg {
+    margin: 15px 0;
+  }
+  h1 {
+    text-align: center;
+  }
+  .box {
+    position: relative;
+    width: 80%;
+    top: 0;
+  }
+  #username {
+    margin: auto;
+    position: relative;
+    width: 88%;
+  }
+  #resultbox {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .result {
+    position: relative;
+    width: 95%;
+    height: 230px !important;
+  }
+  #pfp {
+    margin: 20px 10px;
+  }
+  #name {
+    position: fixed;
+    width: 87%;
+    margin: 25px 86px;
+    display: inline-block;
+    font-size: 26px;
+  }
+  #handle {
+    position: absolute;
+    width: 80%;
+    margin: 55px 85px;
+    font-size: 15px;
+  }
+  #followers {
+    margin: 100px 20px !important;
+    font-size: 60px !important;
+  }
+  p {
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 400px) {
+  #resultbox {
+    display: flex;
+    position: initial;
+    justify-content: center;
+  }
+  .result {
+    position: absolute;
+    width: 80%;
+    height: 290px !important;
+    margin: -120px -364px;
+  }
+  #name {
+    font-size: 25px;
+    display: block;
+    width: 240px;
+  }
+  #handle {
+    display: flex;
+    margin: 50px 100px;
+  }
+  #followBox {
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+  #followers {
+    font-size: 100px !important;
+    margin: 100px 20px !important;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 450px) and (max-width: 550px){
+  #followers{
+    font-size: 90px !important;
+  }
+} 
+@media screen and (min-width: 900px) and (max-width: 1000px) {
+  .result {
+    margin: -150px -400px;
+    position: absolute;
+  }
 }
