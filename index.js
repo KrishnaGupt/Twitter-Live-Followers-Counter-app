@@ -26,7 +26,7 @@ function valueTransfer() {
     number.innerHTML = followers_count;
     pic.src = profile_image;
     username.innerHTML = name;
-    twtHandle.innerHTML = inputVal;
+    twtHandle.innerHTML = '@'+inputVal;
     let board = result;
     let count = number.innerText.length;
     console.log(count);
